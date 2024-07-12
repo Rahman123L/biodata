@@ -1,0 +1,36 @@
+body {
+    font-family : Arial, sans-serif;
+    margin : 20;
+    padding : 0;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    background-color: #f5bd44;
+}
+content{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table {
+    margin: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+th, td{
+    border: 1px solid #f5bd44 ;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color:#FF8C00
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #FF8C00;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

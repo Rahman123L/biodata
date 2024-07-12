@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIODATA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body class="bg-[#F5F7FA]">
+
+    <!-- Login Start -->
+    <div class="w-[40%] bg-white rounded-3xl mt-[7rem] mx-auto p-10 space-y-14">
+        <div class="flex justify-center items-center gap-4">
+            <div class="w-28 h-28 object-cover">
+                <img class="w-full h-full object-contain" src="images/logo.png" alt="logo">
+            </div>
+            <div class="text-start space-y-1">
+                <h1 class="text-blue-500 text-2xl font-bold">UNIVERSITAS LABUHANBATU</h1>
+                <h2 class="text-blue-500 text-xl font-bold uppercase">Teknologi Informasi</h2>
+            </div>
+        </div>
+
+        <form action="functions/login.php" method="POST" class="w-full space-y-5">
+            <label class="">
+                <h1 class="py-3 text-base text-[#000000] font-medium">Username</h1>
+                <input class="w-full transition transform duration-500 py-3 px-5 md:px-10 border-[0.5px] text-sm md:text-base font-medium border-[#B0B0B0] focus:border-blue-500 rounded-lg focus:outline-none placeholder:text-base placeholder:text-gray-300 placeholder:font-normal" placeholder="Username" type="text" name="username" id="username" required autocomplete="off" autofocus>
+            </label>
+
+            <label class="">
+                <h1 class="py-3 text-base text-[#000000] font-medium">Password</h1>
+                <input class="w-full transition transform duration-500 py-3 px-5 md:px-10 border-[0.5px] text-sm md:text-base font-medium border-[#B0B0B0] focus:border-blue-500 rounded-lg focus:outline-none placeholder:text-base placeholder:text-gray-300 placeholder:font-normal" placeholder="Password" type="password" name="password" id="password" required autocomplete="off">
+            </label>
+            
+            <div class="flex justify-end items-center gap-3">
+                <button type="submit" name="submit" class="w-[35%] px-4 py-2 bg-blue-500 group transition transform duration-700 hover:bg-[#B0B0B0] rounded-lg hover:scale-[1.01] focus:scale-[1]">
+                    <h1 class="transition transform duration-500 text-lg font-normal text-[#FFFFFF] uppercase">Login</h1>
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- Login End -->
+
+    <!-- Script Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>
